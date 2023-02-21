@@ -5,14 +5,12 @@ class AppTheme {
   static final ThemeData lightTheme = ThemeData.light().copyWith(
       primaryColor: Colors.indigo,
       //Appbar
-      appBarTheme: const AppBarTheme(
-        color: primary, 
-        elevation: 0));
+      appBarTheme: const AppBarTheme(color: primary, elevation: 0));
 
   static final ThemeData darkTheme = ThemeData.dark().copyWith(
       primaryColor: Colors.indigo,
       //Appbar
-      appBarTheme: const AppBarTheme(
-        color: primary, 
-        elevation: 0));
+      appBarTheme: const AppBarTheme(color: primary, elevation: 0),
+      textButtonTheme: TextButtonThemeData(
+          style: TextButton.styleFrom(foregroundColor: Colors.red)));
 }
